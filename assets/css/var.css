@@ -1,0 +1,8 @@
+/* 변수 */
+:root {
+  --content-max-width-desktop: 1024px;
+  --header-height-desktop: 100px;
+  --mobile-standard-width: 375px; /* iPhone X */
+
+  --black: #000000;
+}

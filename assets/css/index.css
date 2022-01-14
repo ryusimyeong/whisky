@@ -1,0 +1,49 @@
+@import "./reset.css";
+@import "./var.css";
+
+.container {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: var(--header-height-desktop);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  color: #000000;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.main {
+  width: 100%;
+  padding-top: var(--header-height-desktop);
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .header {
+    max-width: var(--content-max-width-desktop);
+    left: calc(50% - (var(--content-max-width-desktop) / 2));
+  }
+
+  .header-title {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  .main {
+    width: 100%;
+    padding-top: var(--header-height-desktop);
+  }
+}
